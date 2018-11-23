@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alunoinfo.tihelp.LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:text="Cadastrar-se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_ti1"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/passID"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+
+        android:id="@+id/emailID"
+        android:hint="Email"
+        android:background="@drawable/canto"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/passID" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_bt"
+        android:background="@drawable/botao"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passID"
+        android:hint="Password"
+        android:background="@drawable/canto"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/emailID"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
