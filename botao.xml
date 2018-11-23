@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="80dp" />
+
+    <Button android:text="Layer 1"
+        android:layout_width="wrap_content"
+        android:id="@+id/button1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:width="100dp"
+        android:height="20dp">
+    </Button>
+
+    <solid android:color="#D8D8D8" />
+</shape>
